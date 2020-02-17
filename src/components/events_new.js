@@ -49,9 +49,9 @@ class EventsNew extends Component {
         <div><Field label="Body" name="body" type="text" component={this.renderField} /></div>
 
         {/* 以下のいずれかに該当する場合はSubmitボタンが非活性状態となります。 */}
-        {/* - 初期値と同じ場合 */}
-        {/* - 送信中の場合 */}
-        {/* - バリデーションエラーが有る場合 */}
+        {/* - 初期値と同じ場合 pristine*/}
+        {/* - 送信中の場合 submitting */}
+        {/* - バリデーションエラーが有る場合 invalid */}
         <RaisedButton label="Submit" type="submit" style={style} disabled={pristine || submitting || invalid} />
         <RaisedButton label="Cancel" style={style} containerElement={<Link to="/" />}/>
       </form>

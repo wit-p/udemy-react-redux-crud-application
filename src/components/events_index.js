@@ -83,6 +83,7 @@ class EventsIndex extends Component {
   }
 }
 
+// Reducerによる状態の変更をひろって扱う
 const mapStateToProps = state => ({ events: state.events })
 
 const mapDispatchToProps = { readEvents }
